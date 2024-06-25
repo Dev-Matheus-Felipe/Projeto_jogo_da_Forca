@@ -1,0 +1,140 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,body, #root{
+  height: 100%;
+}
+
+/* ------------------------------------------------------------ */
+
+.app{
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.app > form{
+  border: 2px solid white;
+  height: 300px;
+  width: 500px;
+  padding: 2%;
+
+  & input{
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin: 20px 0;
+    padding: 1%;
+    padding-left: 10px;
+    outline: none;
+    background-color: transparent;
+    color: white;
+    font-weight: bold;
+  }
+
+  & input::placeholder{
+    color: white;
+  }
+
+  & input[type='submit']{
+    cursor: pointer;
+  }
+}
+
+
+.caixa_de_resposta{
+  padding: 2%;
+}
+
+.caixa_de_resposta > form input{
+  background-color: transparent;
+  color: white;
+}
+
+.caixa_de_resposta > form input::placeholder{
+  color: white;
+}
+
+.caixa_de_resposta > form input[type='text']{
+  width: 100%;
+  height: 60px;
+  border: 1px solid white;
+  padding: 2%;
+  padding-left: 15px;
+  border-radius: 7px;
+  margin: 20px 0;
+  outline: none;
+}
+
+.caixa_de_resposta > form input[type='submit']{
+  width: 100%;
+  height: 45px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+
+#root{
+  padding: 5%;
+  background-image: url('./assets/2.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+
+
+.palavra{
+  margin-top: 60px;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row wrap;
+ 
+
+  & .letra{
+    margin: 0 20px;
+    width: 40px;
+    height: 40px;
+    border-bottom: 3px solid white;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-flow: row wrap;
+    padding-bottom: 5px;
+
+    & p{
+      opacity: 0;
+      color: white;
+    }
+  }
+}
+
+
+
+.erros{
+  margin-top: 40px;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-flow:  row wrap;
+
+  & .quadrado{
+    width: 70px;
+    height: 70px;
+    border: 3px solid black;
+    margin: 2%;
+  }
+}
+
